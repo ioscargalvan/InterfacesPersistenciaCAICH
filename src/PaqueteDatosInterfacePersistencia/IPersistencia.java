@@ -6,6 +6,7 @@
 package PaqueteDatosInterfacePersistencia;
 
 import Clases.Cita;
+import Clases.Cubiculo;
 import Clases.Paciente;
 import PersistenciaExceptions.PersistenciaException;
 import java.util.List;
@@ -38,6 +39,8 @@ public interface IPersistencia {
     public List<Cita> recuperarCitasCanceladas() throws PersistenciaException;
     
     public List<Cita> recuperarCitasPorPaciente(Paciente paciente) throws PersistenciaException;
+    
+    public List<Cubiculo> recuperarCubiculosOcupadosPorHora(String hora) throws PersistenciaException;
     
     
 }
